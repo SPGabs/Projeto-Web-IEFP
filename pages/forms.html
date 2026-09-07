@@ -4,44 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../images/favicon-form.png">
     <title>Formulários</title>
 </head>
 
 <body>
     <nav class="container" id="Menu">
-        <a href="/index.html">Página inicial</a>
-        <a href="/pages/forms.html">Formulários</a>
-        <a href="/pages/tables.html">Tabela de UFCDs</a>
-        <a href="/pages/ppt23.html">Exercicio Pangolins</a>
-        <a href="/pages/ppt28.html">Exercicio Listas</a>
-        <a href="/pages/linksAndImages.html">Exercicio Links e Imagens</a>
-        <a href="/pages/semantic.html">HTML Semântico</a>
+        <a href="../index.html">Página inicial</a>
+        <a href="forms.html">Formulários</a>
+        <a href="tables.html">Tabela de UFCDs</a>
+        <a href="ppt23.html">Exercicio Pangolins</a>
+        <a href="ppt28.html">Exercicio Listas</a>
+        <a href="linksAndImages.html">Exercicio Links e Imagens</a>
+        <a href="semantic.html">HTML Semântico</a>
     </nav>
     <hr>
-    <h1>Formulário de Contato</h1>
-    <form action="pages/contato-sucess.html" method="post">
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome" required placeholder="Primeiro Nome">
-        <input type="text" id="ultimo-nome" name="sobrenome" required placeholder="Último Nome"><br><br>
-        <label for="genero">Pronome de tratamento:</label><br>
-        <input type="radio" name="genero" value="masculino" required><label for="masculino">Masculino</label>
-        <input type="radio" name="genero" value="feminino" required> <label for="feminino">Feminino</label>
-        <input type="radio" name="genero" value="outro" required> <label for="outro">Neutro</label><br><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required placeholder="email@exemplo.com"><br><br>
-        <label for="telefone">Telefone:</label><br>
-        <input type="tel" id="telefone" name="telefone" required placeholder="telefone de contato"><br><br>
-        <select name="assunto" id="assunto" required>
-            <option value="">Selecione o assunto</option>
-            <option value="informacoes">Informações</option>
-            <option value="orcamento">Orçamento</option>
-            <option value="reclamacao">Reclamação</option>
-        </select><br><br>
-        <label for="mensagem">Mensagem:</label><br>
-        <textarea rows="4" cols="45" id="mensagem" name="mensagem" required
-            placeholder="Digite sua mensagem"></textarea><br><br>
-        <button type="submit" value="Enviar">Solicitar Contato</button>
-    </form>
+    <div>
+        <h1>Formulário de Inscrição</h1>
+        <p>Preencha o formulário abaixo para se inscrever:</p>
+        <form action="inscricao-sucesso.html" method="post">
+            <label for="primeiro-nome" id="label-primeiro-nome">Primeiro Nome:</label><br>
+            <input type="text" id="input-primeiro-nome" name="primeiro-nome" required placeholder="Primeiro Nome">
+            <input type="text" id="input-ultimo-nome" name="ultimo-nome" required placeholder="Último Nome"><br><br>
+            <label for="username" id="label-username">Nome de Usuário:</label><br>
+            <input type="text" id="input-username" name="username" placeholder="Digite seu nome de usuário" required><br><br>
+            <label for="email" id="label-email">Email:</label><br>
+            <input type="email" id="input-email" name="email" placeholder="Digite seu email" required><br><br>
+            <label for="password" id="label-password">Palavra-passe:</label><br>
+            <input type="password" id="input-password" name="password" placeholder="Digite sua palavra-passe" required><br><br>
+            <label for="confirm-password" id="label-confirm-password">Confirmar Palavra-passe:</label><br>
+            <input type="password" id="input-confirm-password" name="confirm-password" placeholder="Confirme sua palavra-passe" required><br><br>
+            <input type="checkbox" id="input-termos" name="termos" required> <label for="input-termos">Aceito os termos e condições.</label><br><br>
+            <select id="input-ufcd" name="ufcd" required>
+                <option value="blank-ufcd" selected disabled hidden id="option-ufcd">Selecione a UFCD</option>
+                <option value="ufcd-9963" id="option-ufcd-9963">UFCD 9963 (Edição Web)</option>
+                <option value="ufcd-0154" id="option-ufcd-0154">UFCD 0154 (Stilos em CSS)</option>
+            </select><br><br>
+            <button type="submit" value="Enviar">Guardar Inscrição</button>
+        </form>
+    </div>
 </body>
 
 </html>
