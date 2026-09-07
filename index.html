@@ -10,12 +10,13 @@
 
 <body>
     <nav class="container" id="Menu">
-        <a href="index.html">Página inicial</a>
-        <a href="tables.html">Tabela de UFCDs</a>
-        <a href="ppt23.html">Exercicio Pangolins</a>
-        <a href="ppt28.html">Exercicio Listas</a>
-        <a href="linksAndImages.html">Exercicio Links e Imagens</a>
-        <a href="semantic.html">HTML Semântico</a>
+        <a href="pages/index.html">Página inicial</a>
+        <a href="pages/forms.html">Formulários</a>
+        <a href="pages/tables.html">Tabela de UFCDs</a>
+        <a href="pages/ppt23.html">Exercicio Pangolins</a>
+        <a href="pages/ppt28.html">Exercicio Listas</a>
+        <a href="pages/linksAndImages.html">Exercicio Links e Imagens</a>
+        <a href="pages/semantic.html">HTML Semântico</a>
         <a href="#Navegação-interna">Navegação Interna</a>
     </nav>
     <hr>
@@ -144,6 +145,21 @@
                 </tr>
             </tbody>
         </table>
+    </div>
+    <div>
+        <h1>Os inputs em formulários</h1>
+        <form action="pages/inscricao-sucess.html">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" placeholder="Digite seu nome" required><br><br>
+        <label for="idade">Idade:</label><br>
+        <input type="number" id="idade" placeholder="Digite sua idade" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" placeholder="Digite seu email" required><br><br>
+        <label for="nascimento">Data de Nascimento:</label><br>
+        <input type="date" id="nascimento" placeholder="Digite sua data de nascimento" required><br><br>
+        <input type="checkbox" id="termos" required> <label for="termos">Aceito os termos e condições</label><br><br>
+        <button type="submit" value="Enviar">Guardar Inscrição</button>
+        </form>
     </div>
     <footer>
         <hr>
