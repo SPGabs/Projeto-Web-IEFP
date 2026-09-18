@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina do Gabriel Sousa</title>
+    <link rel="icon" type="image/png" href="/images/steven-favicon.png">
+    <link rel="stylesheet" href="/css/sobremim.css">
+</head>
+<body>
+    <!--Navegação entre paginas-->
+    <nav class="container" id="Menu">
+        <a href="index.html">Página inicial</a>
+        <a href="pages/cores.html">Cores</a>
+        <a href="pages/forms.html">Formulários</a>
+        <a href="pages/tables.html">Tabela de UFCDs</a>
+        <a href="pages/ppt23.html">Exercicio Pangolins</a>
+        <a href="pages/ppt28.html">Exercicio Listas</a>
+        <a href="pages/linksAndImages.html">Exercicio Links e Imagens</a>
+        <a href="pages/semantic.html">HTML Semântico</a>
+        <a href="/pages/sobremim.html">Sobre Mim</a>
+        <a href="#Navegação-interna">Navegação Interna</a>
+    </nav>
+    <hr>
+    <!-- Menu de Navegação Interna-->
+    <div>
+        <ul class="menu">
+            <li><a href="index.html">Pagina Inicial</a></li>
+            <li><a href="#sobre-mim">Sobre Mim</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </div>
+    <!-- Fim do Menu de Navegação -->
+    
+    <!-- Header do Site com imagem de boas vindas -->
+    <header>
+        <h1>Bem-vindo à minha página pessoal!</h1>
+    </header>
+    <!-- Fim do Header -->
+
+    <!-- Conteúdo Principal da Página -->
+    <main>
+        <!-- Sobre Mim -->
+        <section class="sobre-mim" id="sobre-mim">
+            <img src="images/steven-peace.png" alt="Steven Universo (Paz)" class="header-image">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Meu chamo Gabriel Sousa e sou estudante de programação WEB e Design UI/UX. Nesta página, você encontrará informações sobre mim, meus hobbies, projetos e sobre como entrar em contato comigo.</p>
+            <p>Tenho 28 anos e moro em Porto, Portugal, desde 2023. Nasci em Suzano, São Paulo no Brasil e após a pandemia, decidi me aventurar em terras lusitanas na ansia de novas experiências e desafios.</p>
+            <p>Antes de iniciar minha jornada no Design UI/UX, trabalhei em um Hostel por um ano e foi a minha experiência mais enriquecedora, onde tive a oportunidade de desenvolver minhas fluencia no inglês e conhecer pessoas de diferentes culturas. Estou sempre em busca de aprender novas tecnologias e aprimorar minhas habilidades.</p>
+            <!-- Hobbies -->
+            <h3>Meus Hobbies</h3>
+            <ul>
+                <li>Programar para a Web</li>
+                <li>Jogar Video Games</li>
+                <li>Ouvir Música</li>
+                <li>Assistir Filmes e Séries</li>
+                <li>Ler Livros</li>
+                <li>Viajar</li>
+            </ul>
+            <!-- Projetos -->
+            <h3>Meus Projetos</h3>
+            <img src="images/kirby-cooking.png" alt="Kirby Cozinhando" class="projeto-image">
+            <p>Aqui estão alguns dos meus projetos em andamento:</p>
+            <ol>
+                <li><a href="https://projeto-web-iefp.vercel.app/" target="_blank" rel="noopener noreferrer">Projeto Web IEFP</a></li>
+                <li><a href="https://controle-financeiro-html-css-js-nod.vercel.app/" target="_blank" rel="noopener noreferrer">Controle Financeiro</a></li>
+                <li><a href="https://meal-prep-pro-one.vercel.app/" target="_blank" rel="noopener noreferrer">Meal Prep Pro</a></li>
+            </ol>
+        </section>
+        <!-- Links Favoritos -->
+        <section class="Links favoritos" id="links-favoritos">
+            <img src="Images/sims.png" alt="Sims pingente" class="links-image">
+            <h2>Links Favoritos</h2>
+            <p>Aqui estão alguns dos meus links favoritos:</p>
+                <a href="https://github.com/" target="_blank">Github - Armazenar códigos</a><br>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Documentação HTML do Mozilla</a><br>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">Documentação CSS do Mozilla</a><br>
+                <a href="https://vercel.com/" target="_blank">Vercel - Hospedar projetos</a><br>
+                <a href="https://www.stickpng.com/" target="_blank">StickPNG - Buscar imagns para os projetos</a><br>
+        </section>
+        <!-- Meus Horários -->
+        <section class="horario-semanal" id="horario-semanal">
+            <img src="images/mario.png" alt="Mario a voar" class="horario-image">
+            <h2>Meus Horários</h2>
+            <table>
+                <tr>
+                    <th>Horário</th>
+                    <th>Segunda a Sexta</th>
+                    <th>Fim de semana</th>
+                </tr>
+                <tr>
+                    <td>09:00 - 13:00</td>
+                    <td>Aulas IEFP</td>
+                    <td>Livre</td>
+                </tr>
+                <tr>
+                    <td>13:00 - 14:00</td>
+                    <td>Almoço</td>
+                    <td>Almoço</td>
+                </tr>
+                <tr>
+                    <td>14:00 - 18:00</td>
+                    <td>Estudos</td>
+                    <td>Livre</td>
+                </tr>
+            </table>
+        </section>
+        <!-- Formulário de Contato -->
+        <section class="contato" id="contato">
+            <img src="images/timmy-e-tommy.png" alt="Timmy e Tommy (Ajudantes)" class="contato-image">
+            <h2>Contato</h2>
+            <p>Se você quiser entrar em contato comigo, preencha o formulário abaixo:</p>
+            <form class="formulario">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required>
+                <br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <!-- Fim do Conteúdo Principal da Página -->
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 <a href="https://github.com/SPGabs?tab=repositories" target="_blank" rel="noopener noreferrer">Gabriel Sousa</a>. Todos os direitos reservados.</p>
+    </footer>
+    <!-- Fim do Rodapé -->
+</body>
+</html>
