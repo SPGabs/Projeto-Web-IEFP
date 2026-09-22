@@ -3,6 +3,7 @@ div {
     border: solid 1px grey;
     border-radius: 5px;
     text-align: center;
+    margin: 0 auto;
 }
 
 img {
