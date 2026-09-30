@@ -70,3 +70,17 @@
         color: #3a8c64;
     }
 
+@media print {
+    nav{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    img {
+        display: none;
+    }
+}
