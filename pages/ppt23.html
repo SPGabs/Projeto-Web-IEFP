@@ -1,18 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PPT23 - Pangolin</title>
     <link rel="icon" type="image/png" href="../images/Pangolin-favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/ppt23.css">
 </head>
 
 <body>
     <nav class="container" id="Menu">
+        <!-- Marca/logotipo visivel apenas no mobile -->
+        <span class="brand">
+            <img src="../images/steven-favicon.png" alt="Logótipo">
+            Gabriel Sousa
+        </span>
+        <!-- Icones do menu mobile (tecnica do :target) -->
+        <a href="#Menu" class="menu-icon abrir">&#9776;</a>
+        <a href="#fechar-menu" class="menu-icon fechar">&#10005;</a>
         <a href="../index.html">Página inicial</a>
-        <a href="../pages/dog.html">Bordas - cão</a>
+        <a href="dog.html">Bordas - cão</a>
         <a href="evenodd.html">Pares e Ímpares</a>
         <a href="seletores.html">Seletores CSS</a>
         <a href="texttransform.html">Text Transform</a>
@@ -23,44 +33,72 @@
         <a href="ppt28.html">Exercicio Listas</a>
         <a href="linksAndImages.html">Exercicio Links e Imagens</a>
         <a href="semantic.html">HTML Semântico</a>
+        <a href="flexbox.html">Flexbox</a>
+        <a href="position.html">Position</a>
         <a href="sobremim.html">Sobre Mim</a>
     </nav>
     <hr>
-    <h1>Pangolin</h1>
-    <h2>Introduction</h2>
-    <p>Pangolins, sometimes known as <b>scaly anteaters</b>, are mammals of the order <b>Pholidota</b>. The name comes
-        from the Ancient Greek word φολῐ́ς, meaning “horny scale”.</p>
-    <p>The one extant family, <b>Manidae</b>, has three genera: <b>Manis</b>, <b>Phataginus</b> and <b>Smutsia</b>.</p>
-    <p><b>Manis</b> comprises the four species found in Asia, while <b>Phataginus</b> and <b>Smutsia</b> include two
-        species each, all found in Sub-Saharan Africa.</p>
-    <p>These species range in size from 30 to 100 cm, or 12 to 39 inches. A number of extinct pangolin species are also
-        known.</p>
-    <h2>Description</h2>
-    <p>Pangolins have large, protective keratin scales covering their skin. They are the only known mammals with this
-        feature.</p>
-    <p>They live in hollow trees or burrows, depending on the species.</p>
-    <p>Pangolins are nocturnal, and their diet consists mainly of ants and termites, which they capture using their long
-        tongues.</p>
-    <p>They tend to be solitary animals, meeting only to mate and produce a litter of one to three offspring, which they
-        raise for about two years. </p>
-    <h2>Poaching</h2>
-    <p>Pangolins are threatened by poaching for their meat and scales, which are used in traditional Chinese medicine.
-    </p>
-    <p>They are also threatened by the heavy deforestation of their natural habitats and are considered the most
-        trafficked mammals in the world.</p>
-    <p>As of January 2020, the eight pangolin species were classified on the Red List of Threatened Species of the
-        International Union for Conservation of Nature.</p>
-    <h3>Critically Endangered</h3>
-    <p><b>Manis culionensis</b></p>
-    <p><b>Manis pentadactyla</b></p>
-    <p><b>Manis javanica</b></p>
-    <h3>Endangered</h3>
-    <p><b>Phataginus tricuspis</b></p>
-    <p><b>Manis crassicaudata</b></p>
-    <p><b>Smutsia gigantea</b></p>
-    <h3>Vulnerable</h3>
-    <p><b>Phataginus tetradactyla</b></p>
-    <p><b>Smutsia temminckii</b></p>
+
+    <!-- Card: introducao -->
+    <section>
+        <h1>Pangolin</h1>
+        <h2>Introduction</h2>
+        <p>Pangolins, sometimes known as <b>scaly anteaters</b>, are mammals of the order <b>Pholidota</b>. The name
+            comes from the Ancient Greek word φολῐ́ς, meaning "horny scale".</p>
+        <p>The one extant family, <b>Manidae</b>, has three genera: <b>Manis</b>, <b>Phataginus</b> and
+            <b>Smutsia</b>.</p>
+        <p><b>Manis</b> comprises the four species found in Asia, while <b>Phataginus</b> and <b>Smutsia</b> include two
+            species each, all found in Sub-Saharan Africa.</p>
+        <p>These species range in size from 30 to 100 cm, or 12 to 39 inches. A number of extinct pangolin species are
+            also known.</p>
+    </section>
+
+    <!-- Card: descricao -->
+    <section>
+        <h2>Description</h2>
+        <p>Pangolins have large, protective keratin scales covering their skin. They are the only known mammals with
+            this feature.</p>
+        <p>They live in hollow trees or burrows, depending on the species.</p>
+        <p>Pangolins are nocturnal, and their diet consists mainly of ants and termites, which they capture using their
+            long tongues.</p>
+        <p>They tend to be solitary animals, meeting only to mate and produce a litter of one to three offspring, which
+            they raise for about two years. </p>
+    </section>
+
+    <!-- Card: caca furtiva -->
+    <section>
+        <h2>Poaching</h2>
+        <p>Pangolins are threatened by poaching for their meat and scales, which are used in traditional Chinese
+            medicine.</p>
+        <p>They are also threatened by the heavy deforestation of their natural habitats and are considered the most
+            trafficked mammals in the world.</p>
+        <p>As of January 2020, the eight pangolin species were classified on the Red List of Threatened Species of the
+            International Union for Conservation of Nature.</p>
+    </section>
+
+    <!-- Card: estados de conservacao em grelha flexbox -->
+    <section>
+        <h2>Conservation Status</h2>
+        <div class="status-grid">
+            <div class="status critico">
+                <h3>Critically Endangered</h3>
+                <p><b>Manis culionensis</b></p>
+                <p><b>Manis pentadactyla</b></p>
+                <p><b>Manis javanica</b></p>
+            </div>
+            <div class="status perigo">
+                <h3>Endangered</h3>
+                <p><b>Phataginus tricuspis</b></p>
+                <p><b>Manis crassicaudata</b></p>
+                <p><b>Smutsia gigantea</b></p>
+            </div>
+            <div class="status vulneravel">
+                <h3>Vulnerable</h3>
+                <p><b>Phataginus tetradactyla</b></p>
+                <p><b>Smutsia temminckii</b></p>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

@@ -1,18 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina do Gabriel Sousa</title>
     <link rel="icon" type="image/png" href="../images/steven-favicon.png">
-    <link rel="stylesheet" href="../css/sobremim.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/sobremim.css">
 </head>
 <body>
     <!--Navegação entre paginas-->
     <nav class="container" id="Menu">
+        <!-- Marca/logotipo visivel apenas no mobile -->
+        <span class="brand">
+            <img src="../images/steven-favicon.png" alt="Logótipo">
+            Gabriel Sousa
+        </span>
+        <!-- Icones do menu mobile (tecnica do :target) -->
+        <a href="#Menu" class="menu-icon abrir">&#9776;</a>
+        <a href="#fechar-menu" class="menu-icon fechar">&#10005;</a>
         <a href="../index.html">Página inicial</a>
-        <a href="../pages/dog.html">Bordas - cão</a>
+        <a href="dog.html">Bordas - cão</a>
         <a href="evenodd.html">Pares e Ímpares</a>
         <a href="seletores.html">Seletores CSS</a>
         <a href="texttransform.html">Text Transform</a>
@@ -23,6 +32,8 @@
         <a href="ppt28.html">Exercicio Listas</a>
         <a href="linksAndImages.html">Exercicio Links e Imagens</a>
         <a href="semantic.html">HTML Semântico</a>
+        <a href="flexbox.html">Flexbox</a>
+        <a href="position.html">Position</a>
         <a href="sobremim.html">Sobre Mim</a>
     </nav>
     <hr>
@@ -31,6 +42,8 @@
         <ul class="menu">
             <li><a href="#sobre-mim">Sobre Mim</a></li>
             <li><a href="#meus-projetos">Meus Projetos</a></li>
+            <li><a href="#links-favoritos">Links Favoritos</a></li>
+            <li><a href="#horario-semanal">Meus Horários</a></li>
             <li><a href="#contato">Contato</a></li>
         </ul>
     </div>
@@ -38,7 +51,7 @@
     
     <!-- Header do Site com imagem de boas vindas -->
     <header>
-        <h1>Bem-vindo à minha página pessoal!</h1>
+        <h1>Bem-vindo à minha página!</h1>
     </header>
     <!-- Fim do Header -->
 
@@ -53,7 +66,7 @@
             <p>Antes de iniciar minha jornada no Design UI/UX, trabalhei em um Hostel por um ano e foi a minha experiência mais enriquecedora, onde tive a oportunidade de desenvolver minhas fluencia no inglês e conhecer pessoas de diferentes culturas. Estou sempre em busca de aprender novas tecnologias e aprimorar minhas habilidades.</p>
             <!-- Hobbies -->
             <h3>Meus Hobbies</h3>
-            <ul>
+            <ul class="hobbies-list">
                 <li>Programar para a Web</li>
                 <li>Jogar Video Games</li>
                 <li>Ouvir Música</li>
@@ -65,14 +78,14 @@
             <h3 class="meus-projetos" id="meus-projetos">Meus Projetos</h3>
             <img src="../images/kirby-cooking.png" alt="Kirby Cozinhando" class="projeto-image">
             <p>Aqui estão alguns dos meus projetos em andamento:</p>
-            <ol>
+            <ol class="projetos-list">
                 <li><a href="https://projeto-web-iefp.vercel.app/" target="_blank" rel="noopener noreferrer">Projeto Web IEFP</a></li>
                 <li><a href="https://controle-financeiro-html-css-js-nod.vercel.app/" target="_blank" rel="noopener noreferrer">Controle Financeiro</a></li>
                 <li><a href="https://meal-prep-pro-one.vercel.app/" target="_blank" rel="noopener noreferrer">Meal Prep Pro</a></li>
             </ol>
         </section>
         <!-- Links Favoritos -->
-        <section class="Links favoritos" id="links-favoritos">
+        <section class="links-favoritos" id="links-favoritos">
             <img src="../images/sims.png" alt="Sims pingente" class="links-image">
             <h2>Links Favoritos</h2>
             <p>Aqui estão alguns dos meus links favoritos:</p>
@@ -80,7 +93,9 @@
                 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Documentação HTML do Mozilla</a><br>
                 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">Documentação CSS do Mozilla</a><br>
                 <a href="https://vercel.com/" target="_blank">Vercel - Hospedar projetos</a><br>
-                <a href="https://www.stickpng.com/" target="_blank">StickPNG - Buscar imagns para os projetos</a><br>
+                <a href="https://www.stickpng.com/" target="_blank">StickPNG - Buscar imagens para os projetos</a><br>
+                <a href="https://flexboxfroggy.com/#pt-br" target="_blank">Flexbox Froggy - Aprender CSS Flexbox ajudando os sapos</a><br>
+                <a href="https://bezier.method.ac/" target="_blank">The Bézier Game - Treinar a ferramenta Pen do Figma</a><br>
         </section>
         <!-- Meus Horários -->
         <section class="horario-semanal" id="horario-semanal">

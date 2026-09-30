@@ -1,0 +1,43 @@
+/* =========================================================
+   PPT23.CSS - Pagina do exercicio Pangolins
+   Conteudo dividido em cards centrados, com grelha
+   flexbox para os estados de conservacao
+   ========================================================= */
+
+
+/* ---------- Texto centrado, como nas restantes paginas ---------- */
+section {
+    text-align: center;
+}
+
+
+/* ---------- Grelha de cards (Flexbox) ---------- */
+.status-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.status {
+    flex: 1 1 200px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+
+/* ---------- Cores por nivel de risco ---------- */
+.critico {
+    background-color: #fdecea;
+    border: 2px solid #c0392b;
+}
+
+.perigo {
+    background-color: #fef5e7;
+    border: 2px solid #e67e22;
+}
+
+.vulneravel {
+    background-color: #eef5f0;
+    border: 2px solid #3a8c64;
+}

@@ -1,37 +1,146 @@
+/* =========================================================
+   SOBREMIM.CSS - Pagina "Sobre Mim" (portfolio pessoal)
+   Estilos especificos desta pagina. Carrega DEPOIS do
+   style.css e do nav.css, herdando a base partilhada.
+   ========================================================= */
+
+
+/* ---------- Corpo da pagina ---------- */
+body {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+
+/* ---------- Menu de navegacao interna (atalhos) ---------- */
+.menu {
+    list-style-type: none;
+    display: flex;
+    /* Mobile first: atalhos em coluna no telemovel */
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #e3ded2;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.menu li {
+    margin: 5px;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    background-color: #3a8c64;
+    color: #ffffff;
+}
+
+
+/* ---------- Imagens das seccoes ---------- */
 .header-image,
 .projeto-image,
 .links-image,
 .horario-image,
 .contato-image {
-    width: 200px;
-    height: 200px;
+    /* Mobile first: imagens mais pequenas no telemovel */
+    width: 140px;
+    height: 140px;
     object-fit: contain;
     display: block;
     margin: 20px auto;
+    padding: 10px;
+    border: 3px solid #3a8c64;
+    border-radius: 50%;
+    background-color: #ffffff;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0 auto;
-    background-color: #f4f4f4;
-    text-align: center;
-    max-width: 800px;
-    background-color: antiquewhite;
-}
 
-ul, ol {
-    list-style-position: inside;
+/* ---------- Grelhas com Flexbox (hobbies e projetos) ---------- */
+.hobbies-list,
+.projetos-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
     padding: 0;
 }
 
-.menu {
-    list-style-type: none;
+.hobbies-list li,
+.projetos-list li {
+    background-color: #eef5f0;
+    border: 1px solid #3a8c64;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin: 8px;
 }
 
-table, th, td {
-    text-align: center;
-    margin: auto;
-    padding: 5px;
+.projetos-list a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* ---------- Links favoritos em formato de cartao ---------- */
+.links-favoritos a {
+    display: inline-block;
+    background-color: #ffffff;
+    border: 1px solid #3a8c64;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.links-favoritos a:hover {
+    background-color: #3a8c64;
+    color: #ffffff;
+}
+
+
+/* ---------- Formulario de contacto ---------- */
+.formulario {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+/* ---------- Tabela do horario ---------- */
+table,
+th,
+td {
     border: 1px solid black;
-    border-collapse: collapse;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE - Mobile first
+   Base (acima): telemovel
+   Tablet e desktop: a partir de 601px
+   ========================================================= */
+@media (min-width: 601px) {
+
+    .header-image,
+    .projeto-image,
+    .links-image,
+    .horario-image,
+    .contato-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Atalhos lado a lado em ecras maiores */
+    .menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

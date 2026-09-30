@@ -1,19 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="../images/favicon-form.png">
+    <link rel="icon" type="image/png" href="../images/foms-favicon.png">
     <title>Formulários</title>
-    <link rel="stylesheet" href="../css/forms.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/forms.css">
 </head>
 
 <body>
     <nav class="container" id="Menu">
+        <!-- Marca/logotipo visivel apenas no mobile -->
+        <span class="brand">
+            <img src="../images/steven-favicon.png" alt="Logótipo">
+            Gabriel Sousa
+        </span>
+        <!-- Icones do menu mobile (tecnica do :target) -->
+        <a href="#Menu" class="menu-icon abrir">&#9776;</a>
+        <a href="#fechar-menu" class="menu-icon fechar">&#10005;</a>
         <a href="../index.html">Página inicial</a>
-        <a href="../pages/dog.html">Bordas - cão</a>
+        <a href="dog.html">Bordas - cão</a>
         <a href="evenodd.html">Pares e Ímpares</a>
         <a href="seletores.html">Seletores CSS</a>
         <a href="texttransform.html">Text Transform</a>
@@ -24,10 +33,12 @@
         <a href="ppt28.html">Exercicio Listas</a>
         <a href="linksAndImages.html">Exercicio Links e Imagens</a>
         <a href="semantic.html">HTML Semântico</a>
+        <a href="flexbox.html">Flexbox</a>
+        <a href="position.html">Position</a>
         <a href="sobremim.html">Sobre Mim</a>
     </nav>
     <hr>
-    <div>
+    <section>
         <h1>Formulário de Inscrição</h1>
         <p>Preencha o formulário abaixo para inscrever-se:</p>
         <form action="inscricao-sucesso.html">
@@ -51,7 +62,7 @@
             </select><br><br>
             <button type="submit" value="Enviar">Guardar Inscrição</button>
         </form>
-    </div>
+    </section>
 </body>
 
 </html>

@@ -1,17 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
- 
+<html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox Playground</title>
+    <link rel="icon" type="image/png" href="../images/steven-favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/flexbox.css">
 </head>
- 
+
 <body>
+    <!-- Navegacao entre paginas -->
+    <nav class="container" id="Menu">
+        <!-- Marca/logotipo visivel apenas no mobile -->
+        <span class="brand">
+            <img src="../images/steven-favicon.png" alt="Logótipo">
+            Gabriel Sousa
+        </span>
+        <!-- Icones do menu mobile (tecnica do :target) -->
+        <a href="#Menu" class="menu-icon abrir">&#9776;</a>
+        <a href="#fechar-menu" class="menu-icon fechar">&#10005;</a>
+        <a href="../index.html">Página inicial</a>
+        <a href="dog.html">Bordas - cão</a>
+        <a href="evenodd.html">Pares e Ímpares</a>
+        <a href="seletores.html">Seletores CSS</a>
+        <a href="texttransform.html">Text Transform</a>
+        <a href="cores.html">Cores</a>
+        <a href="forms.html">Formulários</a>
+        <a href="tables.html">Tabela de UFCDs</a>
+        <a href="ppt23.html">Exercicio Pangolins</a>
+        <a href="ppt28.html">Exercicio Listas</a>
+        <a href="linksAndImages.html">Exercicio Links e Imagens</a>
+        <a href="semantic.html">HTML Semântico</a>
+        <a href="flexbox.html">Flexbox</a>
+        <a href="position.html">Position</a>
+        <a href="sobremim.html">Sobre Mim</a>
+    </nav>
+    <hr>
+
     <h1>Let's Play With Flexbox</h1>
- 
+
     <section id="container">
         <div id="one"></div>
         <div id="two"></div>
@@ -19,7 +50,7 @@
         <div id="four"></div>
         <div id="five"></div>
     </section>
- 
+
 </body>
- 
+
 </html>

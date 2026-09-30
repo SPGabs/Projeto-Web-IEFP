@@ -1,17 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage Introdução Web</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body>
+<body id="topo">
     <nav id="Menu">
+        <!-- Marca/logotipo visivel apenas no mobile -->
+        <span class="brand">
+            <img src="images/steven-favicon.png" alt="Logótipo">
+            Gabriel Sousa
+        </span>
+        <!-- Icones do menu mobile (tecnica do :target) -->
+        <a href="#Menu" class="menu-icon abrir">&#9776;</a>
+        <a href="#fechar-menu" class="menu-icon fechar">&#10005;</a>
         <a href="#">Página inicial</a>
         <a href="#Navegação-interna">Navegação Interna</a>
         <a href="pages/dog.html">Bordas - cão</a>
@@ -25,6 +34,8 @@
         <a href="pages/ppt28.html">Exercicio Listas</a>
         <a href="pages/linksAndImages.html">Exercicio Links e Imagens</a>
         <a href="pages/semantic.html">HTML Semântico</a>
+        <a href="pages/flexbox.html">Flexbox</a>
+        <a href="pages/position.html">Position</a>
         <a href="pages/sobremim.html">Sobre Mim</a>
     </nav>
     <hr>
@@ -34,41 +45,54 @@
         <img src="images/html5.webp" alt="https://pt.wikipedia.org/wiki/HTML5" width="200px" id="HTML">
     </div>
     <br>
-    <div class="H1 & P">
-        <h1>Isto é um H1</h1>
-        <h2>Isto é um H2</h2>
-        <h3>Isto é um H3</h3>
-        <H4>Isto é um H4</H4>
-        <h5>Isto é um h5</h5>
-        <h6>Isto é um H6</h6>
-        <p>Isto é um parágrafo</p>
-        <p><b>Isto é um parágrafo em Negrito</b></p>
-        <p><i>Isto é um Parágrafo em Itálico</i></p>
+
+    <!-- Grelha de cards com Flexbox -->
+    <div class="cards-grid">
+        <!-- Card: demonstracao de titulos e paragrafos -->
+        <section class="card headings">
+            <h1>Isto é um H1</h1>
+            <h2>Isto é um H2</h2>
+            <h3>Isto é um H3</h3>
+            <h4>Isto é um H4</h4>
+            <h5>Isto é um h5</h5>
+            <h6>Isto é um H6</h6>
+            <p>Isto é um parágrafo</p>
+            <p><b>Isto é um parágrafo em Negrito</b></p>
+            <p><i>Isto é um Parágrafo em Itálico</i></p>
+        </section>
+        <!-- Card: block vs inline -->
+        <section class="card">
+            <h2>BLOCK VS. INLINE</h2>
+            <p><b>Block:</b> Ocupa toda a largura disponível, iniciando em uma nova linha. Exemplo: <b>&lt;p&gt;</b> &
+                <b>&lt;h1&gt;</b>.
+            </p>
+            <p><b>Inline:</b> Ocupa apenas a largura necessária, permitindo que outros elementos fiquem na mesma linha.
+                Exemplo: <b>&lt;a&gt;</b> & <b>&lt;img&gt;</b>.</p>
+        </section>
+        <!-- Card: span vs div -->
+        <section class="card">
+            <h2>SPAN VS. DIV</h2>
+            <p><b>Span:</b> É um elemento inline usado para aplicar estilos ou scripts a uma parte específica do
+                conteúdo
+                dentro de um elemento. Exemplo: <b>&lt;span&gt;</b>.</p>
+            <p><b>Div:</b> É um elemento de bloco usado para agrupar outros elementos e aplicar estilos ou scripts a
+                eles.
+                Exemplo: <b>&lt;div&gt;</b>.</p>
+        </section>
+        <!-- Card: tags unicas -->
+        <section class="card">
+            <h2>TAGS Únicas</h2>
+            <p>As tags únicas são elementos que não possuem uma tag de fechamento. Elas são usadas para inserir
+                conteúdo ou
+                criar elementos sem a necessidade de um par de tags. Exemplos: <b>&lt;img&gt;</b>, <b>&lt;br&gt;</b>,
+                <b>&lt;hr&gt;</b>.
+            </p>
+        </section>
     </div>
-    <div>
-        <h1>BLOCK VS. INLINE</h1>
-        <p><b>Block:</b> Ocupa toda a largura disponível, iniciando em uma nova linha. Exemplo: <b>&lt;p&gt;</b> &
-            <b>&lt;h1&gt;</b>.
-        </p>
-        <p><b>Inline:</b> Ocupa apenas a largura necessária, permitindo que outros elementos fiquem na mesma linha.
-            Exemplo: <b>&lt;a&gt;</b> & <b>&lt;img&gt;</b>.</p>
-    </div>
-    <div>
-        <h1>SPAN VS. DIV</h1>
-        <p><b>Span:</b> É um elemento inline usado para aplicar estilos ou scripts a uma parte específica do conteúdo
-            dentro de um elemento. Exemplo: <b>&lt;span&gt;</b>.</p>
-        <p><b>Div:</b> É um elemento de bloco usado para agrupar outros elementos e aplicar estilos ou scripts a eles.
-            Exemplo: <b>&lt;div&gt;</b>.</p>
-    </div>
-    <div>
-        <h1>TAGS Únicas</h1>
-        <p>As tags únicas são elementos que não possuem uma tag de fechamento. Elas são usadas para inserir conteúdo ou
-            criar elementos sem a necessidade de um par de tags. Exemplos: <b>&lt;img&gt;</b>, <b>&lt;br&gt;</b>,
-            <b>&lt;hr&gt;</b>.
-        </p>
-    </div>
-    <div>
-        <h1>Lorem Ipsum</h1>
+
+    <!-- Seccao: Lorem Ipsum -->
+    <section>
+        <h2>Lorem Ipsum</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis est, error, quis, dolorem perspiciatis
             nemo odio explicabo ex repudiandae corporis quos voluptas expedita sequi suscipit placeat modi velit iusto
             soluta.
@@ -96,13 +120,17 @@
             Corrupti aperiam similique voluptate quia sequi quis eius. Labore quam eum sunt. Molestias ullam sequi
             pariatur aut aspernatur excepturi modi officiis optio! Laboriosam culpa optio molestias, odio placeat
             facilis dolores.</p>
-    </div>
-    <div id="Navegação-interna">
-        <h1>Utilização de IDs para navegação interna</h1>
-        <a href="#Menu">De volta ao topo</a>
-    </div>
-    <div>
-        <h1>Elementos Semânticos</h1>
+    </section>
+
+    <!-- Seccao: navegacao interna com IDs -->
+    <section id="Navegação-interna">
+        <h2>Utilização de IDs para navegação interna</h2>
+        <a href="#topo">De volta ao topo</a>
+    </section>
+
+    <!-- Seccao: elementos semanticos -->
+    <section>
+        <h2>Elementos Semânticos</h2>
         <p>Os elementos semânticos são tags HTML que possuem um significado específico e descrevem o propósito do
             conteúdo que envolvem. Eles ajudam a estruturar a página de forma mais clara e compreensível, tanto para os
             desenvolvedores quanto para os mecanismos de busca e leitores de tela. Alguns exemplos de elementos
@@ -119,9 +147,11 @@
         </ul>
         <p>O uso de elementos semânticos melhora a acessibilidade, a indexação pelos motores de busca e a compreensão
             geral do conteúdo da página, tornando-a mais estruturada e significativa.</p>
-    </div>
-    <div>
-        <h1>Tabelas</h1>
+    </section>
+
+    <!-- Seccao: tabelas -->
+    <section>
+        <h2>Tabelas</h2>
         <table>
             <caption>Total de Alunos</caption>
             <thead>
@@ -135,7 +165,7 @@
                 <tr>
                     <td>Eliza</td>
                     <td>31</td>
-                    <td>Guimarâes</td>
+                    <td>Guimarães</td>
                 </tr>
                 <tr>
                     <td>Gabriel</td>
@@ -154,24 +184,28 @@
                 </tr>
             </tbody>
         </table>
-    </div>
-    <div class="formulario">
-        <h1>Formulário de Contato</h1>
+    </section>
+
+    <!-- Seccao: formulario de contato -->
+    <section class="formulario">
+        <h2>Formulário de Contato</h2>
         <form action="pages/contato-sucesso.html">
-           <label for="primeiro-nome" id="label-primeiro-nome">Primeiro Nome:</label><br>
-            <input type="text" id="input-primeiro-nome" name="primeiro-nome" required placeholder="Primeiro Nome" minlength="2" maxlength="15"><br><br>
-            <label for="ultimo-nome" id="label-ultimo-nome">Último Nome:</label><br>
-            <input type="text" id="input-ultimo-nome" name="ultimo-nome" required placeholder="Último Nome" minlength="2" maxlength="15"><br><br>
-            <label for="genero" id="label-genero">Pronome de tratamento:</label><br>
+            <label for="input-primeiro-nome" id="label-primeiro-nome">Primeiro Nome:</label><br>
+            <input type="text" id="input-primeiro-nome" name="primeiro-nome" required placeholder="Primeiro Nome"
+                minlength="2" maxlength="15"><br><br>
+            <label for="input-ultimo-nome" id="label-ultimo-nome">Último Nome:</label><br>
+            <input type="text" id="input-ultimo-nome" name="ultimo-nome" required placeholder="Último Nome"
+                minlength="2" maxlength="15"><br><br>
+            <label for="input-genero-masculino" id="label-genero">Pronome de tratamento:</label><br>
             <input type="radio" name="genero" value="masculino" id="input-genero-masculino" required><label
                 for="input-genero-masculino">Masculino</label>
             <input type="radio" name="genero" value="feminino" id="input-genero-feminino" required> <label
                 for="input-genero-feminino">Feminino</label>
             <input type="radio" name="genero" value="neutro" id="input-genero-neutro" required> <label
                 for="input-genero-neutro">Neutro</label><br><br>
-            <label for="email" id="label-email">Email:</label><br>
+            <label for="input-email" id="label-email">Email:</label><br>
             <input type="email" id="input-email" name="email" required placeholder="email@exemplo.com"><br><br>
-            <label for="telefone" id="label-telefone">Telefone:</label><br>
+            <label for="input-telefone" id="label-telefone">Telefone:</label><br>
             <input type="tel" id="input-telefone" name="telefone" required placeholder="telefone de contato"><br><br>
             <select name="assunto" id="input-assunto" required>
                 <option value="" selected disabled hidden>Selecione o assunto</option>
@@ -179,12 +213,13 @@
                 <option value="orcamento">Orçamento</option>
                 <option value="reclamacao">Reclamação</option>
             </select><br><br>
-            <label for="mensagem" id="label-mensagem">Mensagem:</label><br>
+            <label for="input-mensagem" id="label-mensagem">Mensagem:</label><br>
             <textarea rows="4" cols="45" id="input-mensagem" name="mensagem" required
                 placeholder="Digite sua mensagem"></textarea><br><br>
             <button type="submit" value="Enviar">Solicitar Contato</button>
         </form>
-    </div>
+    </section>
+
     <footer>
         <hr>
         <p>&copy; 2026 Gabriel Sousa. Todos os direitos reservados.</p>

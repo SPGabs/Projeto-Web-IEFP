@@ -1,5 +1,11 @@
+/* =========================================================
+   PPT28.CSS - Pagina do exercicio Listas
+   As duas listas em cards lado a lado com Flexbox,
+   cada uma com fundo e borda diferentes
+   ========================================================= */
+
 section {
-    margin: 0 auto;
+    margin: 20px auto;
     max-width: 900px;
     text-align: center;
 }
@@ -8,9 +14,28 @@ section {
     text-align: center;
 }
 
+/* ---------- Grelha de cards (Flexbox) ---------- */
+.listas-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .lists {
-    display: inline-block;
+    flex: 1 1 250px;
     text-align: left;
-    vertical-align: top;
-    margin: 20px;
+    margin: 10px;
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+
+/* ---------- Cada lista com fundo e borda diferentes ---------- */
+.favoritos {
+    background-color: #eef5f0;
+    border: 2px solid #3a8c64;
+}
+
+.outros {
+    background-color: #fdf3e7;
+    border: 2px solid #e67e22;
 }

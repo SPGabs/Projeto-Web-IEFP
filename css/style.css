@@ -1,0 +1,222 @@
+/* =========================================================
+   STYLE.CSS - Estilos partilhados do Projeto Web
+   UFCD 9963 - Edicao Web | Gabriel Sousa
+   Folha ligada a TODAS as paginas para garantir uma
+   identidade visual coerente em todo o projeto.
+   Ordem de carregamento: style.css -> nav.css -> pagina.css
+
+   MOBILE FIRST: os estilos base aplicam-se ao telemovel;
+   tablet e desktop sao adicionados com media queries
+   min-width no final do ficheiro.
+   ========================================================= */
+
+
+/* ---------- Box model previsivel ----------
+   O width/height de todos os elementos passa a incluir
+   o padding e a borda (evita transbordos inesperados) */
+* {
+    box-sizing: border-box;
+}
+
+
+/* ---------- Tipografia e base (mobile) ---------- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #2b2b2b;
+    background-color: #f4f1ea;
+    margin: 0;
+}
+
+
+/* ---------- Cabecalhos ---------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #1f3d2b;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+/* Pseudo-elemento: detalhe decorativo antes dos subtitulos h2 */
+h2::before {
+    content: "\25C6  ";
+    /* losango */
+    color: #3a8c64;
+}
+
+
+/* ---------- Seccoes de conteudo (cards) ---------- */
+section {
+    background-color: #ffffff;
+    border: 1px solid #e3ded2;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 10px auto;
+    max-width: 900px;
+}
+
+
+/* ---------- Imagens ---------- */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ---------- Listas ---------- */
+ul,
+ol {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+
+/* ---------- Ligacoes ---------- */
+a {
+    color: #3a8c64;
+}
+
+a:hover {
+    color: #2e7050;
+}
+
+
+/* ---------- Linhas horizontais ---------- */
+hr {
+    border: none;
+    border-top: 1px solid #d8d2c4;
+    margin: 0;
+}
+
+
+/* ---------- Tabelas ---------- */
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 800px;
+    background-color: #ffffff;
+}
+
+caption {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+th,
+td {
+    border: 1px solid #cccccc;
+    padding: 6px;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Cabecalho da tabela diferenciado do restante conteudo */
+th {
+    background-color: #3a8c64;
+    color: #ffffff;
+}
+
+
+/* ---------- Formularios ---------- */
+input,
+textarea,
+select {
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-family: inherit;
+    margin: 5px 0;
+}
+
+/* Campos de texto mais largos (selectores de atributo) */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea {
+    width: 95%;
+    max-width: 420px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3a8c64;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2e7050;
+}
+
+
+/* ---------- Rodape ---------- */
+footer {
+    background-color: #e9e4d8;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE - Mobile first
+   Base (acima): telemovel
+   Tablet:  a partir de 601px
+   Desktop: a partir de 1025px
+   ========================================================= */
+
+/* ---------- Tablet ---------- */
+@media (min-width: 601px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    section {
+        margin: 15px auto;
+        padding: 15px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"],
+    textarea {
+        width: 80%;
+    }
+}
+
+/* ---------- Desktop ---------- */
+@media (min-width: 1025px) {
+    section {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    table {
+        width: 90%;
+    }
+}

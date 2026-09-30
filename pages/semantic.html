@@ -1,18 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML semântico</title>
     <link rel="icon" type="image/png" href="../images/semantic-favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/nav.css">
 </head>
 
 <body>
     <nav class="container" id="Menu">
+        <!-- Marca/logotipo visivel apenas no mobile -->
+        <span class="brand">
+            <img src="../images/steven-favicon.png" alt="Logótipo">
+            Gabriel Sousa
+        </span>
+        <!-- Icones do menu mobile (tecnica do :target) -->
+        <a href="#Menu" class="menu-icon abrir">&#9776;</a>
+        <a href="#fechar-menu" class="menu-icon fechar">&#10005;</a>
         <a href="../index.html">Página inicial</a>
-        <a href="../pages/dog.html">Bordas - cão</a>
+        <a href="dog.html">Bordas - cão</a>
         <a href="evenodd.html">Pares e Ímpares</a>
         <a href="seletores.html">Seletores CSS</a>
         <a href="texttransform.html">Text Transform</a>
@@ -23,9 +32,12 @@
         <a href="ppt28.html">Exercicio Listas</a>
         <a href="linksAndImages.html">Exercicio Links e Imagens</a>
         <a href="semantic.html">HTML Semântico</a>
+        <a href="flexbox.html">Flexbox</a>
+        <a href="position.html">Position</a>
         <a href="sobremim.html">Sobre Mim</a>
     </nav>
     <hr>
+    <section>
     <h1>HTML Semântico</h1>
     <h2>Footer</h2>
     <p>a Tag &lt;footer&gt; é usada para definir o rodapé de uma seção ou página.</p>
@@ -45,6 +57,7 @@
     <p>Nota: Não confunda &lt;mark&gt; com o elemento &lt;strong&gt;; &lt;Mark&gt; <mark> é usado para indicar conteúdo
             que possui certo grau de
             relevância,</mark> enquanto &lt;Strong&gt; <b>indica trechos de texto importantes.</b></p>
+    </section>
 </body>
 
 </html>

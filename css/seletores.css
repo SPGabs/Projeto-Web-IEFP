@@ -1,3 +1,7 @@
+section {
+    text-align: center;
+}
+
 li {
     color: blue;
 }
@@ -7,4 +11,5 @@ li {
 
 #clear {
     background-color: red;
+    color: white;
 }

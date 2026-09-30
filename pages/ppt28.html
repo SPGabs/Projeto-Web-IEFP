@@ -1,19 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listas</title>
     <link rel="icon" type="image/png" href="../images/favicon-listas.png">
-    <link rel="stylesheet" href="../css/ppt28.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/ppt28.css">
 </head>
 
 <body>
     <nav class="container" id="Menu">
+        <!-- Marca/logotipo visivel apenas no mobile -->
+        <span class="brand">
+            <img src="../images/steven-favicon.png" alt="Logótipo">
+            Gabriel Sousa
+        </span>
+        <!-- Icones do menu mobile (tecnica do :target) -->
+        <a href="#Menu" class="menu-icon abrir">&#9776;</a>
+        <a href="#fechar-menu" class="menu-icon fechar">&#10005;</a>
         <a href="../index.html">Página inicial</a>
-        <a href="../pages/dog.html">Bordas - cão</a>
+        <a href="dog.html">Bordas - cão</a>
         <a href="evenodd.html">Pares e Ímpares</a>
         <a href="seletores.html">Seletores CSS</a>
         <a href="texttransform.html">Text Transform</a>
@@ -24,6 +33,8 @@
         <a href="ppt28.html">Exercicio Listas</a>
         <a href="linksAndImages.html">Exercicio Links e Imagens</a>
         <a href="semantic.html">HTML Semântico</a>
+        <a href="flexbox.html">Flexbox</a>
+        <a href="position.html">Position</a>
         <a href="sobremim.html">Sobre Mim</a>
     </nav>
     <hr>
@@ -33,7 +44,9 @@
             <p>OL significa Lista ordenada, e UL significa Lista não ordenada.</p>
             <p>Para cada item da lista precisamos usar a tag LI e assim como em Titulos (Tags h) ou Parágrafos (Tag p) podemos usar as tags de formatação como <b>b</b> ou <i>i</i>.</p>
         </div>
-        <div class="lists">
+        <!-- Grelha flexbox com as duas listas -->
+        <div class="listas-grid">
+        <div class="lists favoritos">
             <h2>Meus 3 filmes favoritos</h2>
             <ol>
                 <li>O Fabuloso Destino de Amélie <b>(2001)</b></li>
@@ -41,13 +54,14 @@
                 <li>Amadeus <b>(1984)</b></li>
             </ol>
         </div>
-        <div class="lists">
+        <div class="lists outros">
             <h2>Outros bons filmes</h2>
             <ul>
                 <li>Alien, o Oitavo Passageiro <b>(1979)</b></li>
                 <li>Parasitas <b>(2019)</b></li>
                 <li>Annie Hall <b>(1977)</b></li>
             </ul>
+        </div>
         </div>
     </section>
 </body>
