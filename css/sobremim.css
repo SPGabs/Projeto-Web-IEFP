@@ -114,6 +114,12 @@ body {
     text-align: left;
 }
 
+/* Botao centrado (o formulario em si tem texto alinhado a esquerda) */
+.formulario button {
+    display: block;
+    margin: 0 auto;
+}
+
 
 /* ---------- Tabela do horario ---------- */
 table,
