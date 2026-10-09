@@ -29,7 +29,9 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        max-width: 1000px;
+        /* 920px = 900px das sections + 10px de margem de cada lado dos cards,
+           para as bordas dos cards ficarem alinhadas com o resto do conteudo */
+        max-width: 920px;
         margin: 0 auto;
     }
 
@@ -69,7 +71,8 @@
     }
 
     .formulario {
-        max-width: 600px;
+        /* Sem max-width proprio: herda os 900px das sections,
+           ficando alinhado com o resto do conteudo */
         margin: 20px auto;
         padding: 20px;
         border: 1px solid #ccc;
