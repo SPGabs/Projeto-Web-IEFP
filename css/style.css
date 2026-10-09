@@ -2,7 +2,13 @@
    STYLE.CSS - Estilos partilhados do Projeto Principal
    Folha ligada a TODAS as paginas para garantir uma
    identidade visual coerente em todo o projeto.
-   Ordem de carregamento: style.css -> nav.css -> pagina.css
+   Ordem de carregamento:
+   Bootstrap 5.3.x (CDN) -> style.css -> nav.css -> pagina.css
+
+   O Bootstrap trata da estrutura (navbar, grelha, componentes).
+   Este ficheiro guarda a identidade visual "feita a mao"
+   (cores, cards, tipografia) e sobrepoe o que o Bootstrap
+   tentaria padronizar.
 
    MOBILE FIRST: os estilos base aplicam-se ao telemovel;
    tablet e desktop sao adicionados com media queries
@@ -15,6 +21,20 @@
    o padding e a borda (evita transbordos inesperados) */
 * {
     box-sizing: border-box;
+}
+
+/* ---------- Tema Bootstrap (identidade do projeto) ----------
+   Estas variaveis fazem os componentes do Bootstrap
+   (links, focos, alguns botoes) usarem as nossas cores,
+   em vez do azul padrao. */
+:root {
+    --bs-primary: #3a8c64;
+    --bs-primary-rgb: 58, 140, 100;
+    --bs-body-font-family: Arial, Helvetica, sans-serif;
+    --bs-body-bg: #f4f1ea;
+    --bs-body-color: #2b2b2b;
+    --bs-link-color: #3a8c64;
+    --bs-link-hover-color: #2e7050;
 }
 
 /* Scroll suave ao navegar para uma ancora dentro da pagina */

@@ -36,7 +36,7 @@
     }
 
     /* Cada card cresce ate caber; abaixo de ~300px passa para uma coluna */
-    .cards-grid .card {
+    .cards-grid .info-card {
         flex: 1 1 300px;
         margin: 10px;
     }

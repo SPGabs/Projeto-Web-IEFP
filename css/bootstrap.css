@@ -1,0 +1,29 @@
+/* =========================================================
+   BOOTSTRAP.CSS - Pagina do exercicio Bootstrap
+   Carrega DEPOIS do CSS do Bootstrap (CDN)
+   ========================================================= */
+
+/* ---------- Limita a largura do exercicio ----------
+   O container do Bootstrap chega a 1140px em ecras grandes,
+   o que deixava este conteudo simples esticado e feio */
+.exercicio {
+    max-width: 700px;
+}
+
+/* O h1 do exercicio usa as classes do Bootstrap (texto branco);
+   isto impede a cor verde-escura dos h1 do style.css de ganhar */
+.exercicio h1 {
+    color: #ffffff;
+    margin-top: 0;
+}
+
+/* ---------- Caixas com a mesma altura ----------
+   O h1 e o alert ficam com altura igual e conteudo centrado,
+   para nao parecerem desalinhados um do outro */
+.caixa {
+    min-height: 100px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

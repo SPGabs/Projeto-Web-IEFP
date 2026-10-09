@@ -1,4 +1,5 @@
-div {
+/* Limitado ao cartao do exercicio para nao afetar a navbar Bootstrap */
+.dog-card {
     width: 210px;
     border: solid 1px grey;
     border-radius: 5px;
@@ -6,7 +7,7 @@ div {
     margin: 0 auto;
 }
 
-img {
+.dog-card img {
     width: 200px;
     border: solid 5px rgb(236, 183, 191);
     border-radius: 50%;

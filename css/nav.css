@@ -1,129 +1,52 @@
 /* =========================================================
    NAV.CSS - Barra de navegacao partilhada
-
-   MOBILE FIRST: a base e o menu "hamburger" do telemovel
-   (tecnica do :target - abre com #Menu e fecha ao clicar
-   em qualquer link interno). O layout em linha para
-   tablet/desktop e adicionado com min-width no final.
+   Usa o componente navbar do Bootstrap 5.3.x,
+   mas com as cores e o comportamento do site "feito a mao".
+   Carrega DEPOIS do Bootstrap e do style.css.
    ========================================================= */
 
 
-/* ---------- Barra de navegacao (base = mobile) ---------- */
-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333333;
-    /* Sticky: a barra fica sempre visivel no topo ao fazer scroll */
-    position: sticky;
-    top: 0;
-    /* Garante que a barra fica por cima do restante conteudo */
-    z-index: 100;
+/* ---------- Cores da identidade (em vez do bg-dark azul-acinzentado) ---------- */
+.navbar.bg-dark {
+    background-color: #333333 !important;
 }
 
-nav a {
-    display: block;
+.navbar .navbar-brand,
+.navbar .navbar-brand:hover {
     color: #ffffff;
     text-decoration: none;
+}
+
+.navbar .navbar-brand img {
+    width: 24px;
+    height: 24px;
+}
+
+.navbar .nav-link {
+    color: #ffffff;
+    padding: 10px 16px;
     transition: background-color 0.3s ease;
 }
 
-/* Estado visual ao passar o rato */
-nav a:hover {
-    background-color: #3a8c64;
-    color: #ffffff;
-}
-
-/* Link da pagina atual (ajuda o utilizador a orientar-se) */
-nav a.ativo {
+/* Hover e pagina atual: o mesmo verde da paleta do projeto */
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
     background-color: #3a8c64;
     color: #ffffff;
 }
 
 
-/* ---------- Marca/logotipo (visivel no mobile) ---------- */
-.brand {
-    display: flex;
-    align-items: center;
-    color: #ffffff;
-    font-weight: bold;
-    padding: 10px 16px;
+/* ---------- Botao hamburger: nao herdar o botao verde do style.css ---------- */
+.navbar-toggler {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 0.25rem 0.75rem;
+    font-weight: normal;
 }
 
-.brand img {
-    width: 24px;
-    margin-right: 8px;
-}
-
-
-/* ---------- Icone hamburger (visivel no mobile) ---------- */
-.menu-icon {
-    display: block;
-    font-size: 26px;
-    padding: 10px 16px;
-}
-
-/* O "X" so aparece quando o menu esta aberto */
-.menu-icon.fechar {
-    display: none;
-}
-
-
-/* ---------- Links recolhidos por defeito (com transicao) ---------- */
-nav a:not(.menu-icon) {
-    flex-basis: 100%;
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    padding: 0 20px;
-    text-align: left;
-    transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease, background-color 0.3s ease;
-}
-
-/* Menu aberto: os links expandem suavemente */
-nav:target a:not(.menu-icon) {
-    max-height: 60px;
-    opacity: 1;
-    padding: 14px 20px;
-    border-top: 1px solid #444444;
-}
-
-/* Troca o icone de hamburger para "X" */
-nav:target .menu-icon.abrir {
-    display: none;
-}
-
-nav:target .menu-icon.fechar {
-    display: block;
-}
-
-
-/* =========================================================
-   TABLET e DESKTOP (a partir de 601px):
-   links em linha, sem icone nem marca
-   ========================================================= */
-@media (min-width: 601px) {
-    nav {
-        justify-content: center;
-    }
-
-    /* Esconde a marca e os icones do menu mobile */
-    .brand,
-    .menu-icon {
-        display: none;
-    }
-
-    /* Os links voltam a ficar visiveis, lado a lado */
-    nav a:not(.menu-icon),
-    nav:target a:not(.menu-icon) {
-        flex-basis: auto;
-        max-height: none;
-        opacity: 1;
-        overflow: visible;
-        padding: 14px 16px;
-        text-align: center;
-        border-top: none;
-    }
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+    background-color: transparent;
+    outline: 2px solid #3a8c64;
+    outline-offset: 2px;
 }

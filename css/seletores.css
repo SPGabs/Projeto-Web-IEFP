@@ -2,7 +2,8 @@ section {
     text-align: center;
 }
 
-li {
+/* Limitado a section para nao pintar os links da navbar de azul */
+section li {
     color: blue;
 }
 .done {
