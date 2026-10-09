@@ -17,13 +17,28 @@
     margin-top: 0;
 }
 
-/* ---------- Caixas com a mesma altura ----------
-   O h1 e o alert ficam com altura igual e conteudo centrado,
-   para nao parecerem desalinhados um do outro */
+/* ---------- Caixas iguais (largura e altura) ----------
+   As duas ficam dentro de col-12, com height fixo, para o
+   fundo branco da section nao evidenciar diferencas de tamanho */
 .caixa {
-    min-height: 100px;
-    margin: 0;
+    width: 100%;
+    margin: 0 0 1rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Titulo: faixa compacta, no mesmo formato do warning */
+.exercicio h1.caixa {
+    height: 55px;
+    padding: 0 1rem;
+    font-size: 1.75rem;
+    border-radius: 0.375rem;
+}
+
+/* Warning: cerca de metade da altura do titulo */
+.exercicio .alert.caixa {
+    height: 55px;
+    padding: 0 1rem;
+    font-size: 0.95rem;
 }
