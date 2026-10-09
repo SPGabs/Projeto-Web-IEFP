@@ -213,13 +213,17 @@ footer {
 
 /* ---------- Botao flutuante "Voltar ao topo" ---------- */
 .btn-topo {
-    /* Fixed: fica sempre no canto inferior direito do ecra */
-    position: fixed;
+    /* Sticky (ultimo elemento do main): flutua no canto inferior
+       direito durante o scroll, mas "atraca" no fim do conteudo,
+       por isso nunca fica por cima do footer */
+    position: sticky;
     bottom: 20px;
-    right: 20px;
     z-index: 99;
+    display: block;
     width: 45px;
     height: 45px;
+    margin-left: auto;
+    margin-right: 20px;
     border-radius: 50%;
     background-color: #3a8c64;
     color: #ffffff;
