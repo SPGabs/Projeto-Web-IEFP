@@ -27,10 +27,17 @@ nav a {
     display: block;
     color: #ffffff;
     text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
 /* Estado visual ao passar o rato */
 nav a:hover {
+    background-color: #3a8c64;
+    color: #ffffff;
+}
+
+/* Link da pagina atual (ajuda o utilizador a orientar-se) */
+nav a.ativo {
     background-color: #3a8c64;
     color: #ffffff;
 }
@@ -72,7 +79,7 @@ nav a:not(.menu-icon) {
     overflow: hidden;
     padding: 0 20px;
     text-align: left;
-    transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+    transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease, background-color 0.3s ease;
 }
 
 /* Menu aberto: os links expandem suavemente */

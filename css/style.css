@@ -1,6 +1,5 @@
 /* =========================================================
-   STYLE.CSS - Estilos partilhados do Projeto Web
-   UFCD 9963 - Edicao Web | Gabriel Sousa
+   STYLE.CSS - Estilos partilhados do Projeto Principal
    Folha ligada a TODAS as paginas para garantir uma
    identidade visual coerente em todo o projeto.
    Ordem de carregamento: style.css -> nav.css -> pagina.css
@@ -16,6 +15,16 @@
    o padding e a borda (evita transbordos inesperados) */
 * {
     box-sizing: border-box;
+}
+
+/* Scroll suave ao navegar para uma ancora dentro da pagina */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Compensa a navbar sticky: o destino da ancora nao fica escondido */
+[id] {
+    scroll-margin-top: 70px;
 }
 
 
@@ -126,6 +135,11 @@ th {
     color: #ffffff;
 }
 
+/* Linhas alternadas para facilitar a leitura (zebra striping) */
+tbody tr:nth-of-type(even) {
+    background-color: #f2efe8;
+}
+
 
 /* ---------- Formularios ---------- */
 input,
@@ -156,10 +170,25 @@ button {
     color: #ffffff;
     font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: #2e7050;
+}
+
+/* Foco visivel para quem navega com teclado (acessibilidade) */
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #3a8c64;
+    outline: 2px solid #bfe3d2;
+}
+
+a:focus,
+button:focus {
+    outline: 2px solid #3a8c64;
+    outline-offset: 2px;
 }
 
 
