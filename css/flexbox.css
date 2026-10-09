@@ -1,4 +1,5 @@
-body {
+/* Fonte apenas no conteudo principal, para nao afetar o footer */
+main {
     font-family: 'Open Sans', sans-serif;
 }
  

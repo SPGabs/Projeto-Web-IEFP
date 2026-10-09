@@ -211,6 +211,32 @@ footer {
 }
 
 
+/* ---------- Botao flutuante "Voltar ao topo" ---------- */
+.btn-topo {
+    /* Fixed: fica sempre no canto inferior direito do ecra */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #3a8c64;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    /* Centra a seta na vertical usando a altura da linha */
+    line-height: 45px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-topo:hover {
+    background-color: #2e7050;
+    color: #ffffff;
+}
+
+
 /* =========================================================
    RESPONSIVIDADE - Mobile first
    Base (acima): telemovel

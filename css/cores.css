@@ -8,7 +8,8 @@ h1 {
 h2 {
     color: magenta;
 }
-p {
+/* Limitado a section para nao afetar o paragrafo do footer */
+section p {
     color: white;
     background-color: black;
 }
