@@ -46,5 +46,6 @@ h1 {
 @media (min-width: 500px) {
     #container{
         flex-direction: row;
+        flex-wrap: wrap;
     }
 }

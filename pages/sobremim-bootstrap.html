@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio pessoal de Gabriel Sousa, estudante de programação web e design UI/UX.">
+    <title>Portfólio Bootstrap | Gabriel Sousa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light d-flex flex-column min-vh-100">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#inicio">Gabriel Sousa</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu de navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre mim</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow-1">
+        <section id="inicio" class="py-5 bg-white">
+            <div class="container py-lg-5">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-7">
+                        <p class="text-success fw-semibold text-uppercase mb-2">Portfólio pessoal</p>
+                        <h1 class="display-4 fw-bold">Olá, sou o Gabriel Sousa.</h1>
+                        <p class="lead text-secondary mt-3">Estudante de programação web e design UI/UX, interessado em criar experiências digitais claras, úteis e acessíveis.</p>
+                        <div class="d-flex flex-wrap gap-2 mt-4">
+                            <a class="btn btn-success btn-lg" href="#projetos">Ver projetos</a>
+                            <a class="btn btn-outline-dark btn-lg" href="#contacto">Entrar em contacto</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 text-center">
+                        <img src="../images/steven-peace.png" class="img-fluid rounded-circle shadow" width="300"
+                            alt="Ilustração decorativa de Steven Universe a fazer o sinal de paz">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="py-5">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-6">
+                        <h2 class="fw-bold">Sobre mim</h2>
+                        <p>Sou do Brasil e vivo no Porto desde 2023. Estou a desenvolver competências em desenvolvimento web e design de interfaces, combinando curiosidade, prática e atenção às pessoas que utilizam cada produto.</p>
+                        <p class="mb-0">Gosto de aprender novas tecnologias, programar para a web, jogar videojogos, ver filmes e viajar.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <h3 class="h4 card-title">Competências em desenvolvimento</h3>
+                                <div class="d-flex flex-wrap gap-2 mt-3">
+                                    <span class="badge text-bg-success p-2">HTML</span>
+                                    <span class="badge text-bg-success p-2">CSS</span>
+                                    <span class="badge text-bg-success p-2">Bootstrap</span>
+                                    <span class="badge text-bg-success p-2">JavaScript</span>
+                                    <span class="badge text-bg-success p-2">UI/UX</span>
+                                    <span class="badge text-bg-success p-2">Figma</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="py-5 bg-white">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-lg-8">
+                        <h2 class="fw-bold">Projetos</h2>
+                        <p class="text-secondary mb-0">Alguns projetos desenvolvidos durante a aprendizagem.</p>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <article class="card h-100 shadow-sm">
+                            <div class="card-header bg-success text-white fw-semibold">Projeto 01</div>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h4 card-title">Projeto Web IEFP</h3>
+                                <p class="card-text">Página criada no contexto da formação de Edição Web.</p>
+                                <a class="btn btn-outline-success mt-auto" href="https://projeto-web-iefp.vercel.app/" target="_blank" rel="noopener noreferrer">Visitar projeto</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="card h-100 shadow-sm">
+                            <div class="card-header bg-primary text-white fw-semibold">Projeto 02</div>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h4 card-title">Controle Financeiro (Ainda em Desenvolvimento)</h3>
+                                <p class="card-text">Interface para acompanhar movimentos e organizar as finanças pessoais.</p>
+                                <a class="btn btn-outline-primary mt-auto" href="https://controle-financeiro-html-css-js-nod.vercel.app/" target="_blank" rel="noopener noreferrer">Visitar projeto</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="card h-100 shadow-sm">
+                            <div class="card-header bg-warning text-dark fw-semibold">Projeto 03</div>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h4 card-title">Meal Prep</h3>
+                                <p class="card-text">Projeto dedicado ao planeamento de refeições.</p>
+                                <a class="btn btn-outline-dark mt-auto" href="https://meal-prep-pro-one.vercel.app/" target="_blank" rel="noopener noreferrer">Visitar projeto</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="py-5 bg-dark text-white">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-5">
+                        <h2 class="fw-bold">Contacto</h2>
+                        <p class="text-white-50 mb-0">Tens uma ideia, um projeto ou uma oportunidade? Envia uma mensagem.</p>
+                    </div>
+                    <div class="col-lg-7">
+                        <form id="form-contacto" class="needs-validation" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label" for="nome">Nome</label>
+                                    <input class="form-control" type="text" id="nome" name="nome" required>
+                                    <div class="invalid-feedback">Indica o teu nome.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="email">Email</label>
+                                    <input class="form-control" type="email" id="email" name="email" required>
+                                    <div class="invalid-feedback">Indica um email válido.</div>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label" for="assunto">Assunto</label>
+                                    <input class="form-control" type="text" id="assunto" name="assunto" required>
+                                    <div class="invalid-feedback">Indica o assunto da mensagem.</div>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label" for="mensagem">Mensagem</label>
+                                    <textarea class="form-control" id="mensagem" name="mensagem" rows="5" required></textarea>
+                                    <div class="invalid-feedback">Escreve a tua mensagem.</div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-success" type="submit">Enviar mensagem</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="mensagem-enviada" class="alert alert-success mt-3 mb-0 d-none" role="status">
+                            Obrigado pela mensagem. Entrarei em contacto brevemente.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black text-white-50 py-3">
+        <div class="container text-center">
+            <small>&copy; 2026 Gabriel Sousa. Portfólio criado com Bootstrap 5.3.</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        (() => {
+            const form = document.querySelector('#form-contacto');
+            const confirmation = document.querySelector('#mensagem-enviada');
+
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                form.classList.add('was-validated');
+
+                if (!form.checkValidity()) {
+                    return;
+                }
+
+                form.reset();
+                form.classList.remove('was-validated');
+                confirmation.classList.remove('d-none');
+            });
+        })();
+    </script>
+</body>
+
+</html>

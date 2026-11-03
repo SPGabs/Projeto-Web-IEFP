@@ -3,42 +3,61 @@
    Carrega DEPOIS do CSS do Bootstrap (CDN)
    ========================================================= */
 
-/* ---------- Limita a largura do exercicio ----------
-   O container do Bootstrap chega a 1140px em ecras grandes,
-   o que deixava este conteudo simples esticado e feio */
+/* ---------- Limita a largura do exercicio ---------- */
 .exercicio {
+    max-width: 900px;
+}
+
+.exercicio-noticia {
     max-width: 700px;
 }
 
-/* O h1 do exercicio usa as classes do Bootstrap (texto branco);
-   isto impede a cor verde-escura dos h1 do style.css de ganhar */
-.exercicio h1 {
+/* Mantém o título do exercício original branco sobre fundo escuro. */
+.exercicio-noticia h1 {
     color: #ffffff;
     margin-top: 0;
 }
 
-/* ---------- Caixas iguais (largura e altura) ----------
-   As duas ficam dentro de col-12, com height fixo, para o
-   fundo branco da section nao evidenciar diferencas de tamanho */
 .caixa {
-    width: 100%;
-    margin: 0 0 1rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    margin: 0 0 1rem;
 }
 
-/* Titulo: faixa compacta, no mesmo formato do warning */
-.exercicio h1.caixa {
+.exercicio-noticia h1.caixa,
+.exercicio-noticia .alert.caixa {
     height: 55px;
     padding: 0 1rem;
+}
+
+.exercicio-noticia h1.caixa {
     font-size: 1.75rem;
     border-radius: 0.375rem;
 }
 
-/* Warning: cerca de metade da altura do titulo */
-.exercicio .alert.caixa {
-    height: 55px;
-    padding: 0 1rem;
+.exercicio-noticia .alert.caixa {
     font-size: 0.95rem;
+}
+
+.grid-cell {
+    min-height: 70px;
+    border: 1px solid #c9c5bc;
+}
+
+.grid-sage {
+    background-color: #dcebe2;
+}
+
+.grid-blue {
+    background-color: #dce8f4;
+}
+
+.grid-peach {
+    background-color: #f5e3d3;
+}
+
+.grid-lilac {
+    background-color: #e7dff0;
 }
